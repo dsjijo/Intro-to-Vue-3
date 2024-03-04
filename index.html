@@ -16,10 +16,12 @@
         <div class="product-container">
           <div class="product-image">
             <!-- image goes here -->
+            <img :src="image" alt="" />
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
           </div>
+          <a :href="url" target="_blank">More products like this</a>
         </div>
       </div>
     </div>
