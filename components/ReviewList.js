@@ -11,9 +11,9 @@ app.component('review-list',{
             <h3>Reviews:</h3>
             <ul>
                 <li v-for="(review,index) in reviews" :key="index"> 
-                    {{ review.name }} has given {{review.rating}} rating
+                    {{ review.name }} has given {{review.rating}} rating<span v-if="review.willRecommend == 'YES'"> and Recommends</span>.
                     <br/>
-                    "{{ review.review }}"
+                    "{{ review.review }}" 
                 </li>
             </ul> 
         </div>
