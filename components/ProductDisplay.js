@@ -19,7 +19,6 @@ app.component('product-display', {
           <p v-else>Out of Stock</p>
   
           <p>Shipping: {{ shipping }}</p>
-  
           <ul>
             <li v-for="detail in details">{{ detail }}</li>
           </ul>
@@ -39,6 +38,7 @@ app.component('product-display', {
             v-on:click="addToCart">
             Add to Cart
           </button>
+  
         </div>
       </div>
     </div>`,
